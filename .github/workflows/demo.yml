@@ -9,7 +9,7 @@ jobs:
     steps:
       - name: Get code
         uses: actions/checkout@v3
-      - name: Cache Primes
+      - name: Cache
         uses: actions/cache@v6
         with:
           path: ~/.npm
@@ -28,6 +28,7 @@ jobs:
     steps:
       - name: Get code
         uses: actions/checkout@v3
+      - name: Cache
         uses: actions/cache@v6
         with:
           path: ~/.npm
